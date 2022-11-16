@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    {{ if .flasher.Type }}
+    <div style="margin-top: 2rem; margin-bottom: 2rem; text-align: center;">
+        <strong>{{ .flasher.Message }}</strong>
+    </div>
+    {{ end }}
+
+    <form action="" method="post">
+        <label>Age</label>
+        <input type="number" name="age" id="age" required>
+        <br><br>
+        <label>Full name</label>
+        <input type="text" name="full_name" id="full_name" required>
+        <br><br>
+        <input type="submit" name="submit">
+    </form>
+    <button><a href="/">Kembali</a></button>
+</body>
+</html>

@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <form action="">
-        <label>Column A</label>
-        <input type="number" name="col_a" id="col_a">
+    <form action="" method="POST">
+        <label>Nama lengkap</label>
+        <input type="text" name="full_name" id="full_name" value="{{ .data.FullName }}" required>
         <br><br>
         <label>Column B</label>
-        <input type="text" name="col_b" id="col_b">
+        <input type="number" name="age" id="age" value="{{ .data.Age }}" required>
         <br><br>
         <input type="submit" name="submit">
     </form>
-    <button><a href="index.html">Kembali</a></button>
+    <button><a href="/">Kembali</a></button>
 </body>
 </html>
